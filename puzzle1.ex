@@ -1,13 +1,4 @@
-s = """
-1721
-979
-366
-299
-675
-1456
-"""
-
-s
+IO.read(:stdio, :all)
 |> String.split("\n", trim: true)
 |> Enum.map(&String.to_integer/1)
 |> Enum.with_index
