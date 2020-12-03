@@ -1,3 +1,5 @@
+use Bitwise, only_operators: true
+
 s = """
 1-3 a: abcde
 1-3 b: cdefg
@@ -7,17 +9,19 @@ s = """
 defmodule Policy do
     def checkPolicy(policy, pwd) do
         [cnt, char] = String.split(policy, " ", trim: true)
-        [low, hi] = String.split(cnt, "-", trim: true)
+        [pos1, pos2] = String.split(cnt, "-", trim: true)
             |> Enum.map(&String.to_integer/1)
 
-        occurrences = pwd |> String.graphemes |> Enum.count(fn(c) -> c == char end)
         # IO.inspect([
         #     [cnt, char],
-        #     [low, hi],
-        #     occurrences,
+        #     [pos1, pos2],
+        #     [String.at(pwd, pos1), String.at(pwd, pos2)],
         #     pwd
         # ])
-        occurrences <= hi && occurrences >= low
+        first = char == String.at(pwd, pos1-1)
+        second = char == String.at(pwd, pos2-1)
+
+        (first || second) && !(first && second)
     end
 end
 
