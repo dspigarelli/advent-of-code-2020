@@ -11,18 +11,22 @@ defmodule Xmas do
         |> Enum.any?(fn s -> s end)
         
         if !x do
-            IO.inspect("No match for #{target}")
             target
         else
             validate(Enum.take(numbers, -(length(numbers)-1)))
         end
     end
 end
+
 File.read!("input")
 |> String.split("\n", trim: true)
 |> Enum.map(fn s -> 
     String.trim(s)
     |> String.to_integer()
 end)
-|> Xmas.validate()
-|> IO.inspect()
+|> (fn numbers -> 
+    invalid = Xmas.validate(numbers)
+
+    IO.inspect("First invalid: #{invalid}")
+end).()
+# |> IO.inspect()
