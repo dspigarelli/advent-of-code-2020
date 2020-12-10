@@ -3,16 +3,9 @@ defmodule AdventOfCode2020 do
   Documentation for `AdventOfCode2020`.
   """
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> AdventOfCode2020.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  defmacro __using__(options) do
+    quote do
+      import AdventOfCode2020
+    end
   end
 end
