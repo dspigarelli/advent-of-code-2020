@@ -59,21 +59,21 @@ defmodule Mix.Tasks.Day.New do
 
             describe "part_1/1" do
                 test "example input" do
-                    assert "" = @example_input |> String.trim() |> part_1()
+                    assert 0 = @example_input |> String.trim() |> part_1()
                 end
 
                 test "with puzzle input" do
-                    assert "" = puzzle_input() |> String.trim() |> part_1()
+                    assert 0 = puzzle_input() |> String.trim() |> part_1()
                 end
             end
 
             describe "part_2/1" do
-                # test "" do
-                #    assert "" = @example_input |> String.trim() |> part_2()
+                # test "example input" do
+                #    assert 0 = @example_input |> String.trim() |> part_2()
                 # end
 
                 # test "with puzzle input" do
-                #    assert "" = puzzle_input() |> String.trim() |> part_2()
+                #    assert 0 = puzzle_input() |> String.trim() |> part_2()
                 # end
             end
         end
