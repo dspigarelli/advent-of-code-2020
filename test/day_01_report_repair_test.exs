@@ -17,7 +17,7 @@ defmodule AdventOfCode2020.Day01ReportRepairTest do
             assert 514_579 = @example_input |> String.trim() |> part_1()
         end
 
-        # @tag :slow
+        @tag :slow
         test "with puzzle input" do
             assert 646_779 = puzzle_input() |> String.trim() |> part_1()
         end
@@ -28,7 +28,7 @@ defmodule AdventOfCode2020.Day01ReportRepairTest do
             assert 241_861_950 = @example_input |> String.trim() |> part_2()
         end
 
-        # @tag :slow
+        @tag :slow
         test "with puzzle input" do
             assert 246_191_688 = puzzle_input() |> String.trim() |> part_2()
         end
