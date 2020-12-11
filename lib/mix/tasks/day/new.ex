@@ -56,7 +56,7 @@ defmodule Mix.Tasks.Day.New do
             \"\"\"
 
             describe "part_1/1" do
-                test "" do
+                test "example input" do
                     assert "" = @example_input |> String.trim() |> part_1()
                 end
 
