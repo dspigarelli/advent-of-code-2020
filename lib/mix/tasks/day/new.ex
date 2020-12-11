@@ -32,11 +32,13 @@ defmodule Mix.Tasks.Day.New do
 
             def part_1(input) do
                 input
+                |> parse
             end
 
             # def part_2(input) do
-            #    # input
-            #end
+            #     input
+            #     |> parse
+            # end
 
             defp parse(input) do
                 input
