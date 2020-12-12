@@ -32,9 +32,9 @@ defmodule AdventOfCode2020.Day11SeatingSystemTest do
            assert 26 = @example_input |> String.trim() |> part_2()
         end
 
-        # @tag timeout: :infinity
-        # test "with puzzle input" do
-        #    assert 0 = puzzle_input() |> String.trim() |> part_2()
-        # end
+        @tag :slow
+        test "with puzzle input" do
+           assert 2019 = puzzle_input() |> String.trim() |> part_2()
+        end
     end
 end
