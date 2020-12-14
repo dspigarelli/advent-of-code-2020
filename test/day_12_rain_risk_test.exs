@@ -23,7 +23,7 @@ defmodule AdventOfCode2020.Day12RainRiskTest do
 
     describe "part_2/1" do
         # test "example input" do
-        #    assert 0 = @example_input |> String.trim() |> part_2()
+        #    assert 286 = @example_input |> String.trim() |> part_2()
         # end
 
         # test "with puzzle input" do

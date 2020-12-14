@@ -23,7 +23,7 @@ defmodule AdventOfCode2020.Day11SeatingSystemTest do
 
         @tag :slow
         test "with puzzle input" do
-            assert 2251 = puzzle_input() |> String.trim() |> part_1()
+            assert 2_251 = puzzle_input() |> String.trim() |> part_1()
         end
     end
 
@@ -34,7 +34,7 @@ defmodule AdventOfCode2020.Day11SeatingSystemTest do
 
         @tag :slow
         test "with puzzle input" do
-           assert 2019 = puzzle_input() |> String.trim() |> part_2()
+           assert 2_019 = puzzle_input() |> String.trim() |> part_2()
         end
     end
 end
