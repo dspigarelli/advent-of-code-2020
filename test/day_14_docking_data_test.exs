@@ -22,7 +22,7 @@ defmodule AdventOfCode2020.Day14DockingDataTest do
 
     describe "part_2/1" do
         # test "example input" do
-        #    assert 0 = @example_input |> String.trim() |> part_2()
+        #    assert 208 = @example_input |> String.trim() |> part_2()
         # end
 
         # test "with puzzle input" do
